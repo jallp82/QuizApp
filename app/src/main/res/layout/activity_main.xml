@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nebraska Quiz!"
+            android:textColor="#F44336"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/nepicture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q1: What is the Capital of Nebraska?"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/question_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Q2: What year was the State of Nebraska founded?"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question_2_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="April 12th 1813" />
+
+            <RadioButton
+                android:id="@+id/question_2_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="March 1, 1867" />
+
+            <RadioButton
+                android:id="@+id/question_2_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="June 23, 1932" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Q3: Choose two famous people that are from Nebraska."
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/marlon_brando"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marlon Barando" />
+
+            <CheckBox
+                android:id="@+id/rick_james"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rick James" />
+
+            <CheckBox
+                android:id="@+id/jerry_springer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jerry Springer" />
+
+            <CheckBox
+                android:id="@+id/fred_astaire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fred Astaire" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Q4: True or False, Nebraska was the 35th state?"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question_4_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/question_4_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Q5: Choose two things created in Nebraska."
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/disco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disco" />
+
+            <CheckBox
+                android:id="@+id/mcrib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="McRib" />
+
+            <CheckBox
+                android:id="@+id/nachos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nachos" />
+
+            <CheckBox
+                android:id="@+id/kool_aid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kool-Aid" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="checkAnswers"
+            android:text="Submit Your Answers"
+            android:textColor="#F44336"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>
